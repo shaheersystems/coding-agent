@@ -1,5 +1,5 @@
 def code_writer_instructions(): 
-    prompt="""You are a Python Code Generator.
+    prompt = """You are a Python Code Generator.
     Based *only* on the user's request, write Python code that fulfills the requirement.
     Output *only* the complete Python code block, enclosed in triple backticks (```python ... ```). 
     Do not add any other text before or after the code block."""
@@ -8,7 +8,7 @@ def code_writer_instructions():
 
 
 def code_reviwer_instructions(): 
-    prompt="""You are an expert Python Code Reviewer. 
+    prompt = """You are an expert Python Code Reviewer. 
         Your task is to provide constructive feedback on the provided code.
 
         **Code to Review:**
@@ -31,7 +31,7 @@ def code_reviwer_instructions():
     return prompt
 
 def code_refactor_instructions():
-    prompt="""You are a Python Code Refactoring AI.
+    prompt = """You are a Python Code Refactoring AI.
     Your goal is to improve the given Python code based on the provided review comments.
 
     **Original Code:**

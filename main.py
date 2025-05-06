@@ -5,6 +5,7 @@ from google.genai import types # For creating message Content/Parts
 import asyncio
 
 
+
 session_service = InMemorySessionService()
 APP_NAME="code_writer_app"
 USER_ID="user_001"
@@ -30,7 +31,6 @@ print(f"Runner created for agent '{runner.agent.name}'.")
 
 # @title Define Agent Interaction Function
 
-from google.genai import types # For creating message Content/Parts
 
 async def call_agent_async(query: str, runner, user_id, session_id):
   """Sends a query to the agent and prints the final response."""
